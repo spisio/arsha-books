@@ -3,203 +3,302 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arsha Books · Talas</title>
-<meta name="description" content="Arsha Books (Arsha Kitep) is a small independent press in the Old City of Talas, publishing poetry and prose in Iradi, Russian and English since 2009.">
+<title>Arsha Books | Small books from the Old City of Talas</title>
+<meta name="description" content="Arsha Books (Arsha Kitep) is an independent press in the Old City of Talas, publishing poetry, stories and songs in Iradi, Russian and English since 2009.">
+<meta property="og:title" content="Arsha Books">
+<meta property="og:description" content="Small books from the Old City of Talas.">
+<meta property="og:image" content="assets/cover-twelve-kilometres.png">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Arsha Books, home">
+<div class="topbar">Our registration is suspended. We can’t take orders right now, but you can still read our books. <a href="#notice">Find out more</a></div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
       <svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="8.6" fill="none" stroke="currentColor" stroke-width="1.1"/><g fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round"><path d="M0,6.5 L0,-6.5"/><path d="M0,-4 L-2.6,-6"/><path d="M0,-4 L2.6,-6"/><path d="M0,-1 L-3.6,-3.6"/><path d="M0,-1 L3.6,-3.6"/><path d="M0,2 L-4.2,-0.8"/><path d="M0,2 L4.2,-0.8"/><path d="M0,5 L-3.4,2.6"/><path d="M0,5 L3.4,2.6"/></g></svg>
-      <span><span class="brand-name">Arsha Books</span><br><span class="brand-sub">Arsha Kitep · Köhne Diz, Talas</span></span>
+      <span class="logo-text">Arsha Books<small>Arsha Kitep · Talas</small></span>
     </a>
-    <nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="nav">
+      <a href="index.html" class="active">Home</a>
       <a href="#books">Books</a>
       <a href="#about">About</a>
       <a href="#submissions">Submissions</a>
       <a href="#contact">Contact</a>
+      <a href="#books" class="pill">Shop</a>
     </nav>
   </div>
 </header>
 
-<div class="notice" role="note">
-  <div class="wrap">
-    <strong>A note to readers.</strong> Since 2024 our registration with the Department of Public Information has been suspended over what the Department calls a licensing irregularity. We cannot print new books, and bookshops in the Zone cannot stock the ones we have. We are still here, and the books we have made can still be read. <a href="#about">Read more</a>.
-  </div>
-</div>
-
-<main>
-
-<section>
-  <div class="wrap">
-    <p class="kicker">Since 2009</p>
-    <p class="lede">A small press in the Old City of Talas. We publish poetry, stories and songs in Iradi, Russian and English. We print a few hundred copies at a time, and we keep them in print for as long as there is someone to read them.</p>
+<section class="hero">
+  <svg class="ridge" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,130 L140,60 L220,95 L360,20 L470,75 L580,0 L710,62 L800,25 L950,0 L1040,48 L1170,15 L1310,85 L1400,50 L1440,70 L1440,300 L0,300 Z" fill="#27333d"/>
+    <path d="M0,190 L180,130 L330,165 L490,110 L660,150 L840,100 L1000,140 L1180,95 L1340,140 L1440,120 L1440,300 L0,300 Z" fill="#2f3d48"/>
+    <rect y="235" width="1440" height="65" fill="#36444f"/>
+    <line x1="0" y1="236" x2="1440" y2="236" stroke="#d9cba6" stroke-width="2" stroke-dasharray="14 9"/>
+    <rect x="990" y="196" width="18" height="40" fill="#efe9dc"/><rect x="990" y="208" width="18" height="6" fill="#1d262e"/>
+  </svg>
+  <div class="container">
+    <div class="eyebrow">Independent press · Since 2009</div>
+    <h1>Small books from the Old City of Talas.</h1>
+    <p class="sub">Poetry, stories and songs in Iradi, Russian and English. A few hundred copies at a time, kept in print for as long as someone wants to read them.</p>
+    <div class="btn-group">
+      <a class="btn btn-primary" href="#books">Browse our books</a>
+      <a class="btn btn-light" href="twelve-kilometres.html">Read <em>Twelve Kilometres</em></a>
+    </div>
   </div>
 </section>
 
-<section aria-labelledby="featured">
-  <div class="wrap">
-    <h2 id="featured">Featured</h2>
-    <div class="feature">
-      <a href="twelve-kilometres.html"><img src="assets/cover-twelve-kilometres.png" alt="Cover of Twelve Kilometres: the title over a dark mountain ridge, with a dashed line and a single white pillar."></a>
-      <div>
-        <p class="kicker">Stories · 2015 / 2016</p>
-        <h3>Twelve Kilometres</h3>
-        <p class="iradi">On Eki Chakyrym</p>
-        <p class="byline">Aikokul Tursunbek kyzy · translated by Aidana Mukash kyzy</p>
-        <p>Twelve stories and a coda from the partition years, from the winter the Bill of Sale was drafted to the spring the pillars went into the mountains. A translator kneels over a map she should never have seen. A night watchman signs a letter for the first time in his life. A walnut trader's daughter walks four hundred metres of empty road between two posts and gives her name twice.</p>
-        <p class="small">Our best-loved book. The Iradi edition has been reprinted three times. The English edition was our first translation.</p>
-        <div class="actions">
-          <a class="btn solid" href="twelve-kilometres.html">About the book</a>
-          <a class="btn" href="assets/twelve-kilometres.pdf">Read the English edition (PDF)</a>
+<section class="section" id="books">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow" style="color:var(--green)">Our books</div>
+      <h2>The catalogue</h2>
+      <p>Every book we have published, from our first hand-bound poems to the anthology that got us suspended.</p>
+    </div>
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-cover" style="--c:#111;--t:#eee"><span class="a">Anthology</span><span class="t">Baylanyshsyz<span class="i">No Signal</span></span><span class="p">Arsha</span></div>
+        <div class="card-body">
+          <span><span class="badge new">2023</span></span>
+          <h3 style="margin-top:10px">Baylanyshsyz</h3>
+          <div class="meta">42 poets · Poems · 80 pp.</div>
+          <p>Poems written in Talas in October 2023, during the student protests and the days without mobile data.</p>
+          <div class="card-foot"><span class="price">250 som</span><span class="badge grey">Unavailable</span></div>
         </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover" style="--c:#e8dcc0;--t:#2f5d4e"><span class="a">Nazgul Ermekova · Dilbar Pak</span><span class="t">Ak-Boz and the Winter Road<span class="i">Ak-Boz Kyshky Jolgo</span></span><span class="p">Arsha</span></div>
+        <div class="card-body">
+          <span><span class="badge">Children</span></span>
+          <h3 style="margin-top:10px">Ak-Boz and the Winter Road</h3>
+          <div class="meta">Nazgul Ermekova · 2021 · 32 pp.</div>
+          <p>A grey foal too small for the move to the winter pasture goes anyway. With the herding songs at the back.</p>
+          <div class="card-foot"><span class="price">220 som</span><span class="badge grey">Unavailable</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover" style="--c:#2f3a4a"><span class="a">Ulan Abdyraim uulu</span><span class="t">Toguz<span class="i">Nine</span></span><span class="p">Arsha</span></div>
+        <div class="card-body">
+          <span><span class="badge">Stories</span></span>
+          <h3 style="margin-top:10px">Toguz</h3>
+          <div class="meta">Ulan Abdyraim uulu · 2019 · 120 pp.</div>
+          <p>Nine stories about horse thieves, the elders who judge them and the ninefold fine. Once told by a horse.</p>
+          <div class="card-foot"><span class="price">240 som</span><span class="badge grey">Unavailable</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="cover-link" href="twelve-kilometres.html"><div class="card-cover img"><img src="assets/cover-twelve-kilometres.png" alt="Cover of Twelve Kilometres"></div></a>
+        <div class="card-body">
+          <span><span class="badge">Stories</span> <span class="badge new">Free to read</span></span>
+          <h3 style="margin-top:10px"><a href="twelve-kilometres.html">Twelve Kilometres</a></h3>
+          <div class="meta">Aikokul Tursunbek kyzy · 2015 / 2016</div>
+          <p>Twelve stories and a coda from the partition years. In Iradi and in English.</p>
+          <div class="card-foot"><span class="price">180 som</span><a href="assets/twelve-kilometres.pdf">Read PDF →</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover" style="--c:#c9b98f;--t:#2a2620"><span class="a">Kubat Turdakun uulu (ed.)</span><span class="t">Jol Yrlary<span class="i">Road Songs</span></span><span class="p">Arsha</span></div>
+        <div class="card-body">
+          <span><span class="badge">Songs</span></span>
+          <h3 style="margin-top:10px">Jol Yrlary</h3>
+          <div class="meta">Kubat Turdakun uulu (ed.) · 2013 · 148 pp.</div>
+          <p>Ninety-four horseback songs from the upper Chatkal, recorded 2008–2012, with notes on every singer.</p>
+          <div class="card-foot"><span class="price">200 som</span><span class="badge grey">Unavailable</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover" style="--c:#7a3f2e"><span class="a">Igor Lysenko</span><span class="t">Navbahor Notebooks<span class="i">Navbakhorskie tetradi</span></span><span class="p">Arsha</span></div>
+        <div class="card-body">
+          <span><span class="badge">Poetry</span></span>
+          <h3 style="margin-top:10px">Navbahor Notebooks</h3>
+          <div class="meta">Igor Lysenko · 2012 · 112 pp.</div>
+          <p>A refinery fitter's poems from a Nurzhan microdistrict, in Russian with Iradi facing translations.</p>
+          <div class="card-foot"><span class="price">160 som</span><span class="badge grey">Unavailable</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover" style="--c:#5d6f63"><span class="a">Nurila Bekbolot kyzy</span><span class="t">Kök Tütün<span class="i">Blue Smoke</span></span><span class="p">Arsha</span></div>
+        <div class="card-body">
+          <span><span class="badge">Poetry</span></span>
+          <h3 style="margin-top:10px">Kök Tütün</h3>
+          <div class="meta">Nurila Bekbolot kyzy · 2010 · 64 pp.</div>
+          <p>Our very first book: thirty-one poems about the Talas valley in winter, bound by hand in the back room.</p>
+          <div class="card-foot"><span class="price">120 som</span><span class="badge grey">Out of print</span></div>
+        </div>
+      </article>
+
+      <article class="card" style="background:var(--green-light);box-shadow:none">
+        <div class="card-body" style="justify-content:center;text-align:center;padding:34px 24px">
+          <h3 style="font-size:20px">Got a manuscript?</h3>
+          <p>We read poems, stories, memoir and songs in Iradi, Russian and English.</p>
+          <p><a class="btn btn-outline" href="#submissions">How to submit</a></p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="about">
+  <div class="container split">
+    <img src="assets/cover-twelve-kilometres.png" alt="Twelve Kilometres, our best-loved book">
+    <div>
+      <div class="eyebrow" style="color:var(--green)">Our story</div>
+      <h2>Two teachers, one borrowed computer, and a room above the saddlers.</h2>
+      <p>Arsha Books was started in 2009 by Nazgul Ermekova and Talant Imanaliev, two former teachers, in a room above a saddler’s workshop in the Köhne Diz. <em>Arsha</em> is juniper, the smoke of blessings in the mountains. We wanted books that were small, slow-burning and a little sharp.</p>
+      <ul class="check">
+        <li>Books in Iradi first, with Russian and English alongside</li>
+        <li>Short print runs, printed in Talas</li>
+        <li>No ISBNs (Irad doesn’t have an agency), but every book is deposited with the State Archives</li>
+        <li>Funded by our readers, never by parties, companies or governments</li>
+      </ul>
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container stats">
+    <div class="stat"><strong>2009</strong><span>founded in the Old City</span></div>
+    <div class="stat"><strong>8</strong><span>books published</span></div>
+    <div class="stat"><strong>5,400</strong><span>copies printed</span></div>
+    <div class="stat"><strong>3</strong><span>languages</span></div>
+  </div>
+</section>
+
+<section class="section quote">
+  <div class="container">
+    <blockquote>“I read <em>Twelve Kilometres</em> on the night bus to Tash-Kömür and missed my stop, and I was not sorry.”</blockquote>
+    <cite>A reader from Nurzhan, by email</cite>
+  </div>
+</section>
+
+<section class="section" id="notice">
+  <div class="container">
+    <div class="notice-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 17h.01"/></svg>
+      <div>
+        <h3>A note to our readers</h3>
+        <p>In 2024, a few months after we published <em>Baylanyshsyz</em>, the Department of Public Information suspended our registration. The Department says this concerns a licensing irregularity. Human Rights Watch has called it censorship. We have appealed, and we are waiting.</p>
+        <p>Until the suspension is lifted we can’t print, and bookshops in the Zone can’t stock our books. With our authors’ agreement, some of our books are free to read here. Books you have already bought are, of course, still yours.</p>
+        <p style="margin:0"><strong>Thank you for staying with us.</strong> Nazgul &amp; Talant</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="books" aria-labelledby="books-h">
-  <div class="wrap">
-    <h2 id="books-h">Books</h2>
-    <ul class="catalogue">
-
-      <li class="book">
-        <div class="cover" style="--c:#5d6f63">
-          <span class="ca">Nurila Bekbolot kyzy</span>
-          <span><span class="ct">Kök Tütün</span><span class="ci"><br>Blue Smoke</span></span>
-          <span class="cp">Arsha</span>
-        </div>
-        <h3>Kök Tütün <span class="tag">out of print</span></h3>
-        <p class="meta">Nurila Bekbolot kyzy · poems · 2010 · 64 pp.</p>
-        <p class="desc">Our first book. Thirty-one poems about the Talas valley in winter, typeset on a borrowed computer and bound by hand in the back room.</p>
-      </li>
-
-      <li class="book">
-        <div class="cover" style="--c:#7a3f2e">
-          <span class="ca">Igor Lysenko</span>
-          <span><span class="ct">Navbahor Notebooks</span><span class="ci"><br>Navbakhorskie tetradi</span></span>
-          <span class="cp">Arsha</span>
-        </div>
-        <h3>Navbahor Notebooks</h3>
-        <p class="meta">Igor Lysenko · poems in Russian, with Iradi facing translations · 2012 · 112 pp.</p>
-        <p class="desc">A refinery fitter's poems from a Nurzhan microdistrict: shift work, flares on the ceiling, a mother who never stopped calling the city Kobozev.</p>
-      </li>
-
-      <li class="book">
-        <div class="cover" style="--c:#c9b98f; --t:#2a2620">
-          <span class="ca">Collected by Kubat Turdakun uulu</span>
-          <span><span class="ct">Jol Yrlary</span><span class="ci"><br>Road Songs</span></span>
-          <span class="cp">Arsha</span>
-        </div>
-        <h3>Jol Yrlary</h3>
-        <p class="meta">Kubat Turdakun uulu (ed.) · horseback songs from the Chatkal · 2013 · 148 pp.</p>
-        <p class="desc">Ninety-four <em>ırda</em>, sung on the road between pastures, recorded in the upper Chatkal between 2008 and 2012 and set down in Iradi with notes on each singer.</p>
-      </li>
-
-      <li class="book">
-        <a href="twelve-kilometres.html"><img class="coverimg" src="assets/cover-twelve-kilometres.png" alt="Cover of On Eki Chakyrym / Twelve Kilometres"></a>
-        <h3><a href="twelve-kilometres.html">On Eki Chakyrym</a></h3>
-        <p class="meta">Aikokul Tursunbek kyzy · stories · 2015 · 92 pp.</p>
-        <p class="desc">The Iradi original. Three printings.</p>
-      </li>
-
-      <li class="book">
-        <a href="twelve-kilometres.html"><img class="coverimg" src="assets/cover-twelve-kilometres.png" alt="Cover of Twelve Kilometres"></a>
-        <h3><a href="twelve-kilometres.html">Twelve Kilometres</a> <span class="tag">free PDF</span></h3>
-        <p class="meta">Aikokul Tursunbek kyzy, trans. Aidana Mukash kyzy · 2016 · 97 pp.</p>
-        <p class="desc">The English edition, our first translation.</p>
-      </li>
-
-      <li class="book">
-        <div class="cover" style="--c:#2f3a4a">
-          <span class="ca">Ulan Abdyraim uulu</span>
-          <span><span class="ct">Toguz</span><span class="ci"><br>Nine</span></span>
-          <span class="cp">Arsha</span>
-        </div>
-        <h3>Toguz</h3>
-        <p class="meta">Ulan Abdyraim uulu · stories · 2019 · 120 pp.</p>
-        <p class="desc">Nine stories about horse thieves, the elders who judge them and the ninefold fine, told mostly by the horses' owners and once by a horse.</p>
-      </li>
-
-      <li class="book">
-        <div class="cover" style="--c:#e8dcc0; --t:#3e5a48">
-          <span class="ca">Nazgul Ermekova · pictures by Dilbar Pak</span>
-          <span><span class="ct">Ak-Boz and the Winter Road</span><span class="ci"><br>Ak-Boz Kyshky Jolgo</span></span>
-          <span class="cp">Arsha</span>
-        </div>
-        <h3>Ak-Boz and the Winter Road</h3>
-        <p class="meta">Nazgul Ermekova, ill. Dilbar Pak · for children · 2021 · 32 pp.</p>
-        <p class="desc">A grey foal who is too small for the move to the winter pasture goes anyway. In Iradi, with the words of the herding songs at the back.</p>
-      </li>
-
-      <li class="book">
-        <div class="cover" style="--c:#111; --t:#eee">
-          <span class="ca">Anthology</span>
-          <span><span class="ct">Baylanyshsyz</span><span class="ci"><br>No Signal</span></span>
-          <span class="cp">Arsha</span>
-        </div>
-        <h3>Baylanyshsyz <span class="tag">unavailable</span></h3>
-        <p class="meta">Various authors · poems · 2023 · 80 pp.</p>
-        <p class="desc">Poems written in Talas in October 2023, during the student protests and the days without mobile data. Forty-two poets, most of them under twenty-five.</p>
-      </li>
-
-    </ul>
+<section class="section alt" id="submissions">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:0">
+      <div class="eyebrow" style="color:var(--green)">Submissions</div>
+      <h2>Send us your writing</h2>
+      <p>Send ten poems or one story, with a short letter about yourself, to <strong>arsha.books@attelkom.net</strong>. We read everything, slowly, and we answer everything, more slowly. We can’t publish new books at the moment, but we haven’t stopped reading.</p>
+    </div>
   </div>
 </section>
 
-<section id="about" aria-labelledby="about-h">
-  <div class="wrap">
-    <h2 id="about-h">About the press</h2>
-    <div class="cols">
+<section class="section">
+  <div class="container">
+    <div class="newsletter">
       <div>
-        <p>Arsha Books was started in 2009 by two former teachers, Nazgul Ermekova and Talant Imanaliev, in a room above a saddler's workshop in the Köhne Diz. <em>Arsha</em> is juniper, which is burned at blessings in the mountains. We liked the idea of a press whose books were small, slow-burning and a little sharp.</p>
-        <p>We publish four or five books in a good year and one in a bad year. Our print runs are usually between three hundred and a thousand copies, printed in Talas. Our books have no ISBNs, because Irad has no national ISBN agency; each is deposited with the State Archives of Irad.</p>
-        <p>We publish mainly in Iradi. We also publish Russian, because a great deal of Irad lives in it, and English, because a growing part of it reads in it.</p>
+        <h2>Join our mailing list</h2>
+        <p>New books, readings at the Mor-Wave evenings, and the occasional letter from the back room. No more than once a month.</p>
       </div>
       <div>
-        <h3>On the suspension</h3>
-        <p>In 2024, a few months after we published <em>Baylanyshsyz</em>, an anthology of poems from the October 2023 protests, the Department of Public Information suspended our registration. The Department says the suspension concerns a licensing irregularity. Human Rights Watch has described it as censorship. We have appealed and are waiting.</p>
-        <p>While the suspension lasts we cannot print, and bookshops in the Special Economic Zone cannot stock our books. With the authors' agreement, we have put some of our books online to read for free. Copies already sold are, of course, still yours.</p>
-        <p class="small">We do not take money from any party, company or foreign government. We are paid by our readers.</p>
+        <form class="signup" id="signup">
+          <input type="email" placeholder="Your email address" aria-label="Email address" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="signup-note" id="signup-note">We will never share your address.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="submissions" aria-labelledby="sub-h">
-  <div class="wrap">
-    <h2 id="sub-h">Submissions</h2>
-    <p>We read poetry, short stories, memoir and collections of songs in Iradi, Russian and English. Send ten poems or one story with a short letter about yourself. We read everything, slowly, and we answer everything, more slowly. We cannot publish new books while our registration is suspended, but we have not stopped reading.</p>
-  </div>
-</section>
-
-<section id="contact" aria-labelledby="contact-h">
-  <div class="wrap">
-    <h2 id="contact-h">Contact</h2>
-    <div class="cols">
-      <address>
-        Arsha Books<br>
-        Köhne Diz, upstairs from the saddlers<br>
-        Talas, Irad
-      </address>
-      <p>arsha.books@attelkom.net<br>
-        On Tulpar: @arshakitep<br>
-        <span class="small">The office is open on Saturday mornings, when someone is there.</span></p>
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow" style="color:var(--green)">Contact</div>
+      <h2>Say hello</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Visit</h3>
+        <p>Köhne Diz, upstairs from the saddlers, Talas. Saturday mornings, when someone is in.</p>
+      </div>
+      <div class="contact-item">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <h3>Write</h3>
+        <p>arsha.books@attelkom.net</p>
+      </div>
+      <div class="contact-item">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div>
+        <h3>Message</h3>
+        <p>Find us on Tulpar: @arshakitep</p>
+      </div>
     </div>
   </div>
 </section>
 
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>© Arsha Books, Talas, 2009–2026</span>
-    <span>Registered with the Department of Public Information, no. DPI-P 0118/2009 (suspended)</span>
+<footer class="site-footer">
+  <div class="container cols">
+    <div>
+      <a class="logo" href="index.html">
+        <svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="8.6" fill="none" stroke="currentColor" stroke-width="1.1"/><g fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round"><path d="M0,6.5 L0,-6.5"/><path d="M0,-4 L-2.6,-6"/><path d="M0,-4 L2.6,-6"/><path d="M0,-1 L-3.6,-3.6"/><path d="M0,-1 L3.6,-3.6"/><path d="M0,2 L-4.2,-0.8"/><path d="M0,2 L4.2,-0.8"/><path d="M0,5 L-3.4,2.6"/><path d="M0,5 L3.4,2.6"/></g></svg>
+        <span class="logo-text">Arsha Books<small style="color:#87918b">Arsha Kitep · Talas</small></span>
+      </a>
+      <p>Small books from the Old City of Talas, since 2009.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#books">Books</a></li>
+        <li><a href="twelve-kilometres.html">Twelve Kilometres</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#submissions">Submissions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Köhne Diz, Talas</li>
+        <li>arsha.books@attelkom.net</li>
+        <li>Tulpar: @arshakitep</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2021 Arsha Books. All rights reserved.</span>
+    <span>DPI-P 0118/2009 (suspended)</span>
   </div>
 </footer>
 
+<script>
+  var t = document.querySelector('.menu-toggle'), n = document.getElementById('nav');
+  t.addEventListener('click', function () {
+    var open = n.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+  n.addEventListener('click', function (e) { if (e.target.tagName === 'A') { n.classList.remove('open'); t.setAttribute('aria-expanded', false); } });
+  document.getElementById('signup').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('signup-note').textContent = 'Our mailing list is paused while our registration is suspended. Please try again later.';
+  });
+</script>
 </body>
 </html>
