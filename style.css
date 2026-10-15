@@ -1,0 +1,117 @@
+:root {
+  --paper: #f5f1e8;
+  --paper-2: #ece6d8;
+  --ink: #1d1b18;
+  --ink-soft: #5a554c;
+  --rule: #d6cdb9;
+  --juniper: #3e5a48;
+  --slate: #1d262e;
+  --sand: #d9cba6;
+  --notice: #f1e3c4;
+  --notice-ink: #5b4210;
+  --serif: 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1a1d1f; --paper-2: #23272a; --ink: #ece7dc; --ink-soft: #a9a297;
+    --rule: #3a3e40; --juniper: #8fb39a; --notice: #3a301c; --notice-ink: #f1dfb4;
+  }
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--serif); font-size: 18px; line-height: 1.6;
+}
+a { color: var(--juniper); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+img { max-width: 100%; display: block; }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+
+/* masthead */
+.masthead { border-bottom: 1px solid var(--rule); }
+.masthead .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 22px; padding-bottom: 18px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+.brand svg { width: 40px; height: 40px; color: var(--juniper); flex: none; }
+.brand-name { font-variant: small-caps; letter-spacing: .12em; font-size: 22px; line-height: 1.1; }
+.brand-sub { font-style: italic; font-size: 14px; color: var(--ink-soft); letter-spacing: 0; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: var(--ink-soft); font-variant: small-caps; letter-spacing: .08em; font-size: 16px; }
+nav a:hover, nav a[aria-current] { color: var(--ink); }
+
+/* notice */
+.notice { background: var(--notice); color: var(--notice-ink); border-bottom: 1px solid var(--rule); font-size: 16px; }
+.notice .wrap { padding-top: 12px; padding-bottom: 12px; }
+.notice strong { font-variant: small-caps; letter-spacing: .06em; }
+
+/* sections */
+section { padding: 48px 0; border-bottom: 1px solid var(--rule); }
+section:last-of-type { border-bottom: 0; }
+h1, h2, h3 { font-weight: normal; line-height: 1.2; }
+h2 { font-variant: small-caps; letter-spacing: .1em; font-size: 24px; margin: 0 0 24px; }
+.kicker { font-variant: small-caps; letter-spacing: .14em; color: var(--ink-soft); font-size: 15px; margin: 0 0 6px; }
+.lede { font-size: 21px; max-width: 34em; margin: 0; }
+p { margin: 0 0 1em; }
+
+/* featured */
+.feature { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; }
+.feature img { box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+.feature h3 { font-size: 34px; margin: 0 0 4px; }
+.feature .iradi { font-style: italic; color: var(--ink-soft); margin: 0 0 14px; }
+.feature .byline { font-variant: small-caps; letter-spacing: .08em; margin: 0 0 18px; }
+.actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+.btn { display: inline-block; padding: 9px 18px; border: 1px solid var(--juniper); color: var(--juniper); text-decoration: none; font-variant: small-caps; letter-spacing: .08em; font-size: 16px; }
+.btn.solid { background: var(--juniper); color: var(--paper); }
+.btn:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+/* catalogue */
+.catalogue { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 34px 26px; }
+.book a { text-decoration: none; color: inherit; }
+.cover {
+  aspect-ratio: 148 / 210; background: var(--c, #6b5b45); color: var(--t, #f5f1e8);
+  display: flex; flex-direction: column; justify-content: space-between; padding: 18px 14px;
+  text-align: center; box-shadow: 0 6px 18px rgba(0,0,0,.14); margin-bottom: 12px; overflow: hidden;
+}
+.coverimg { width: 100%; aspect-ratio: 148 / 210; object-fit: cover; box-shadow: 0 6px 18px rgba(0,0,0,.14); margin-bottom: 12px; }
+.cover .ca { font-variant: small-caps; letter-spacing: .1em; font-size: 12px; opacity: .85; }
+.cover .ct { font-size: 22px; line-height: 1.15; }
+.cover .ci { font-style: italic; font-size: 13px; opacity: .8; margin-top: 6px; }
+.cover .cp { font-variant: small-caps; letter-spacing: .12em; font-size: 11px; opacity: .75; }
+.book h3 { font-size: 18px; margin: 0; }
+.book .meta { font-size: 14px; color: var(--ink-soft); margin: 2px 0 6px; }
+.book .desc { font-size: 15px; line-height: 1.5; margin: 0; }
+.tag { display: inline-block; font-size: 12px; font-variant: small-caps; letter-spacing: .08em; border: 1px solid var(--rule); padding: 0 6px; margin-left: 4px; color: var(--ink-soft); }
+
+/* about / two column */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.cols h3 { font-variant: small-caps; letter-spacing: .08em; font-size: 19px; margin: 0 0 10px; }
+.small { font-size: 15px; color: var(--ink-soft); }
+address { font-style: normal; }
+
+/* book page */
+.bookhead { display: grid; grid-template-columns: 300px 1fr; gap: 44px; align-items: start; }
+.bookhead h1 { font-size: 40px; margin: 0 0 4px; }
+dl.details { display: grid; grid-template-columns: max-content 1fr; gap: 4px 18px; font-size: 16px; margin: 22px 0 0; }
+dl.details dt { color: var(--ink-soft); font-variant: small-caps; letter-spacing: .06em; }
+dl.details dd { margin: 0; }
+.excerpt { max-width: 36em; margin: 0 auto; }
+.excerpt p { text-indent: 1.4em; margin: 0; }
+.excerpt p.first { text-indent: 0; }
+.excerpt .src { text-align: center; text-indent: 0; font-style: italic; color: var(--ink-soft); margin-top: 18px; }
+blockquote { margin: 0; padding: 0 0 0 20px; border-left: 2px solid var(--juniper); font-style: italic; }
+ol.toc { columns: 2; column-gap: 40px; padding-left: 1.4em; margin: 0; }
+ol.toc li { break-inside: avoid; }
+
+footer { border-top: 1px solid var(--rule); padding: 26px 0 40px; font-size: 14px; color: var(--ink-soft); }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 720px) {
+  body { font-size: 17px; }
+  .feature, .bookhead, .cols { grid-template-columns: 1fr; gap: 26px; }
+  .feature img, .bookhead img { max-width: 240px; }
+  .bookhead h1 { font-size: 32px; }
+  ol.toc { columns: 1; }
+  section { padding: 36px 0; }
+}
